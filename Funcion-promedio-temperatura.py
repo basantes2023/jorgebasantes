@@ -5,16 +5,16 @@ def calcular_temperatura_promedio(datos_temperaturas):
 
     # Iterar a través de las temperaturas de cada ciudad.
     for ciudad_temperaturas in datos_temperaturas:
-        # Calcular la suma de todas las temperaturas de la ciudad.
+        # Calcula la suma de todas las temperaturas de la ciudad.
         total_temperaturas = sum(ciudad_temperaturas)
         # Obtiene el número de semanas, la lista de temperaturas.
         semanas = len(ciudad_temperaturas)
-        # Calcular el promedio de temperatura dividiendo la suma total por el número de semanas.
+        # Calcula el promedio de temperatura dividiendo la suma total por el número de semanas.
         temperatura_promedio = total_temperaturas / semanas
-        # Agregar el promedio a la lista de temperaturas promedio de ciudades.
+        # Agrega el promedio a la lista de temperaturas promedio de ciudades.
         temperaturas_promedio_ciudades.append(temperatura_promedio)
 
-    # Devolver la lista de temperaturas promedio de cada ciudad.
+    # Devuelve la lista de temperaturas promedio de cada ciudad.
     return temperaturas_promedio_ciudades
 
 # Datos de temperaturas
